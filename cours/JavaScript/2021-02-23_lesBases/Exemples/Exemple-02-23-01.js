@@ -1,0 +1,1 @@
+alert('Je suis dans un document à part');

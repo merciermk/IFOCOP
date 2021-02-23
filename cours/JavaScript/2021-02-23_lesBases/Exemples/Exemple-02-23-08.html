@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mardi 23 février - Exemple 8</title>
+    <script>
+        // Les booléens
+        // Un booléen est soit vrai soit faux :
+            // vrai
+            true;
+            1;
+            // faux
+            false;
+            0;
+
+        // Combinaisons
+            // && : et - || : ou
+            true && true; // donne true
+            false && false; // donne false
+            true && false; // donne false
+            true || true ; // donne true
+            true || false; // donne true
+            false || false; // donne false
+
+        // Comparateurs
+            // valeurs
+                // égalité (==)
+                    true == true; // donne true
+                    false == true; // donne false
+                    17 == 10 + 7; // donne true
+                    23 == 12; // donne false
+                    '7' == 7; // donne true
+                // différent de (!=)
+                    true != false; // donne true
+                    true != true; // donne false
+                    9 != 4 + 8; // donne true
+                    8 * 2 != 16; // donne false
+                // supérieur strictement (>)
+                    9 > 3; // donne true
+                    8 + 7 > 23; // donne false
+                // supérieur ou égal (>=)
+                    8 >= 5 + 3; // donne true
+                // inférieur strictement (<)
+                    19 + 43 < 15; // donne false
+                // inférieur ou égal (<=)
+                    34 <= 20 + 14; // donne true
+
+                // Utilisation des combinateurs (&& - ||)
+                    45 > 17 && 8 >= 5 + 3; // donne true
+                    54 > 23 || 9 * 34 < 5; // donne true
+
+            // valeurs et types
+                // égalité de valeur et de type (===)
+                    78 === 70 + 8; // donne true
+                    '81' === 9 * 9; // donne false
+                // différent de type et/ou de valeur (!==)
+                    34 !== '34'; // donne true
+
+        // Inversion
+            !true; // donne false
+            !false == true; // donne true
+            !(true && false); // donne true
+    </script>
+</head>
+<body>
+    <h1>Mardi 23 février - Exemple 8</h1>
+</body>
+</html>

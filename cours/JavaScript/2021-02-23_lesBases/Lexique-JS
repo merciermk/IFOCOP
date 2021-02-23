@@ -1,5 +1,9 @@
 onload=""               --->    s'éxécute aprés que la page soit loader.
+onclick=""              --->    Dans le html, permet de faire une action au click. 
+
 alert('message')        --->    ouvre une fenetre avec un texte
 console.log();          --->    Affiche une information dans la console
+confirm();              --->    Ouvre une boite de dialogue
+
 <noscript></noscript>   --->    Dans le HTML, affiche ce qu'il y a entre les balises si JS est déactivé.
 typeof'Bonjour'         --->    Renvois le type  de la valeur. Dans l'exemple 'string'. 

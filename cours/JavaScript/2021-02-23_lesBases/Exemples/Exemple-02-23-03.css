@@ -1,0 +1,29 @@
+noscript span {
+    background-color: rgba(200,200,200,0.8);
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+noscript div {
+    background-color: #fff;
+    border: 3px solid red;
+    border-radius: 10px;
+    height: 200px;
+    left: 20%;
+    position: fixed;
+    top: calc(50% - 100px);
+    width: 60%;
+}
+
+
+noscript p {
+    color: red;
+    font-size: 40px;
+    line-height: 200px;
+    margin: 0;
+    text-align: center;
+}

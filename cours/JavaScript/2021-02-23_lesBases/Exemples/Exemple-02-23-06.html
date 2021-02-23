@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mardi 23 février - Exemple 6</title>
+    <script>
+        // Les opérations mathématiques et la concaténation
+
+        // En JavaScript on trouve les quatre opérations mathématiques classiques :
+        alert(7 + 12);
+        alert(6 - 2);
+        alert(8 * 3); // multiplication
+        alert(56 / 5);
+
+        // On conserve les priorités de la multiplication et la division sur l'addition et la soustraction
+        alert(3 + 5 * 2); // affiche 13
+
+        // On peut utiliser des parenthèses pour gérer les priorités :
+        var resultat = (6 + 7) * (89 - 13);
+        alert(resultat); // affiche 988
+
+        /*************************************/
+
+        // Il existe un cinquième opérateur spécifique , le modulo (on obtient le reste de la division entière la plus proche) :
+        8 % 3; // donne 2 (car 8 = 3 * 2 + 2)
+        9 % 3; // donne 0
+        42 % 16; // donne 10
+
+        /*************************************/
+
+        // Quand on utilise le signe + avec une chaîne de caractères et un nombre ou une autre chaîne de caractères, on fait une concaténation. On obtient toujours une chaîne de caractères (string) lorsque l'on fait une concaténation.
+
+        var message = 'Bonjour' + ' à tous'; // message contient 'Bonjour à tous'
+        var contenu = 7 + ' billes'; // contenu contient '7 billes'
+        var temperature = 13;
+        alert('Aujourd\'hui, il fait ' + temperature + ' degrés.'); // affiche «Aujourd\hui, il fait 13 degrés.»
+    </script>
+</head>
+<body>
+    <h1>Mardi 23 février - Exemple 6</h1>
+</body>
+</html>

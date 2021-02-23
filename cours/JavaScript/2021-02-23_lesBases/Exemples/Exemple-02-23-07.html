@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mardi 23 février - Exemple 7</title>
+    <script>
+        // Les tableaux
+
+        // Un tableau (Array en anglais) est un type de donnée qui permet d'enregistrer plusieurs informations différentes
+        var mesOrdinateursAnciens = ['Amiga','Atari','Sinclair ZX81','PC XT','Macintosh 128'];
+        // Pour accéder à une entrée d'un tableau, on indique l'indice correspondant. Les indices débutent toujours à la valeur 0 et progresse d'une unité par indice.
+        alert(mesOrdinateursAnciens[3]); // affiche PC XT
+
+        // Pour ajouter une nouvelle information, je place dans un nouvel indice une nouvelle information
+        mesOrdinateursAnciens[5] = 'Oric Atmos'; // désormais, le tableau comprend 6 indices
+
+        // Pour modifier un indice, on met une nouvelle valeur dans un indice existant :
+        mesOrdinateursAnciens[1] = 'Atari 512st'; // désormais, l'indice 1 du tableau contient un nouveau texte
+
+        // Un tableau peut contenir des types de données différents les uns des autres :
+        var divers = [18,'soleil',9.6,'coucou',-89,34.8];
+        divers[6] = divers[0] + divers[4]; // divers[6] contient -71
+
+        // Un tableau peut contenir dans un ou plusieurs indice(s) un tableau
+        var desElements = ['villes',['Paris','Lyon','Marseille','Bordeaux'],'populations',[8000000,1400000,1200000]];
+        desElements[1][2]; // ciblage de Marseille (le tableau qui contient les villes est à l'indice 1 du tableau principal et dans le tableau des villes, Marseille est à l'indice 2)
+    </script>
+</head>
+<body>
+    <h1>Mardi 23 février - Exemple 7</h1>
+</body>
+</html>

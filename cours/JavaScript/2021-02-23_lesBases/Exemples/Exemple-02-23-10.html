@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mardi 23 février - Exemple 10</title>
+    <script>
+        // Les fonctions
+
+            // Principe
+                var addition = function() {
+                    var resultat = 98 + 12;
+                    alert(resultat);
+                };
+
+                // pour exécuter la fonction :
+                addition();
+
+            // Les arguments
+                var soustraction = function(unNombre) {
+                    var leResultat = unNombre - 10;
+                    alert(leResultat);
+                };
+
+                soustraction(90); // affiche 80
+                soustraction(23); // affiche 13
+
+                var multiplication = function(nombreUn,nombreDeux) {
+                    var autreResultat = nombreUn * nombreDeux;
+                    alert(autreResultat);
+                };
+
+                multiplication(87,32); // affiche 2784
+
+
+                var calculExplique = function(nombreUn,nombreDeux,message) {
+                    var total = nombreUn + nombreDeux;
+                    var phrase = message + total;
+                    alert(phrase);
+                };
+
+                calculExplique(87,34,'L\'opération donne : ');
+    </script>
+</head>
+<body>
+    <h1>Mardi 23 février - Exemple 10</h1>
+</body>
+</html>
