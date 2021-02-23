@@ -1,0 +1,113 @@
+# Les bases de JavaScript
+
+---
+
+## info! l'ordre a une importance, le dernier qui parle a raison
+
+## ou écrire le JS
+
+Trois maniere de faire :
+
+- dans une balise du HTML
+- <script> </script> dans le head
+- Dans un fichier .js lien du html avec <script src="***.js"></script>
+
+## les commentaires
+
+// commentaire sur une ligne
+/ _ commentaire
+sur plusieurs lignes _ /
+
+# Types de données
+
+## Caractéres
+
+s'ecrit avec des '' ou "";
+
+## nombres
+
+81; Nombre Entier
+3; Nombre Entier
+-79; Nombre Entier
+45.3; Nombre flottant ou integer
+
+## Variables
+
+Elle stocke une information.
+
+var = variable;
+
+exemple :
+var boite = 'La variable est une boite'
+
+## Les opérations
+
+En JS on trouve les quatre opérations mathématiques classique :
+
+-     	= Addition
+
+*     	= Soustraction
+
+-     	= Multiplication
+
+/ = Division
+
+on conserve les priorités de la multiplication/division sur l'addition/soustranction
+
+% = Modulo, on obtient le reste de la divition entiere la plus proche
+<quote>
+exemple :
+
+8 % 3 = donne 2 car 8 = 3*2 + 2);
+9 % 3 = 0 car 3*3;
+</quote>
+
+## Concaténation
+
+on utilise le signe + pour concaténer.
+Ca devient toujours une string.
+
+exemple :
+
+var bonjour = 'bonjour' + ' je suis Mike';
+var temperature = 7 + ' degres';
+
+## Les tableaux (array)
+
+Type de données qui permet d'enregistrer plusieurs informations differentes.
+
+var mesOrdinateurs = ['macBook Air' , 'macbook pro 2012', 'macbook pro 2015'];
+
+pour récupérer une information du tableaux on indique l'indice.
+
+exemple :
+mesOrdinateurs[0] sera egal a 'macBook Air';
+
+on peut mettre n'importe quelles valeurs dans array, exemple ['string', chiffre, 'string']
+
+On peut avoir un tableau peut contenir plusieurs tableaux dans ses indices
+
+## Booléens
+
+Soit c'est true soit c'est false, 0 ou 1;
+
+### combinaisons
+
+true && true = true
+false && false = false
+true && false = false
+
+true || true = true
+true || false = true
+false || false = false
+
+## Comparateurs
+
+
+==	-> egale a
+!=	-> n'est pas egal
+<	-> inferieur à
+<=	-> inferieur ou égal à
+>	-> plus grand que
+>=	-> plus grand ou egal à
+

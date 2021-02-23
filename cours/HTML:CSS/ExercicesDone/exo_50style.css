@@ -1,0 +1,61 @@
+h1 {
+  color: blanchedalmond;
+  text-align: center;
+}
+.title {
+  background-color: cornflowerblue;
+}
+
+.menu {
+  background-color: cornflowerblue;
+  left: -100px;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 150px;
+}
+
+.menu:hover {
+  left: 0;
+}
+
+.article {
+  min-width: 400px;
+  position: relative;
+  margin-left: 180px;
+  background-color: cornsilk;
+  z-index: 0;
+}
+
+nav > h3 {
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 25%;
+  width: 60px;
+  border-bottom-right-radius: 15%;
+  margin: 0;
+  background-color: crimson;
+}
+
+span {
+  font-size: 20px;
+  float: right;
+  padding-right: 20px;
+  color: red;
+}
+
+.menu2 {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  background-color: rosybrown;
+  z-index: 10;
+}
+
+p:hover + .menu2,
+.menu2:hover {
+  display: block;
+}

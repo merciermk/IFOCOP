@@ -1,0 +1,12 @@
+p {
+  height: 20px;
+  background-color: tomato;
+}
+
+.para1 {
+  overflow: hidden;
+}
+
+.para2 {
+  overflow-x: auto;
+}

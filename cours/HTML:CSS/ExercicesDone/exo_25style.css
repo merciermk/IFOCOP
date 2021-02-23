@@ -1,0 +1,7 @@
+.listInsideList {
+  list-style-type: none;
+}
+
+ul :last-child {
+  list-style-type: none;
+}

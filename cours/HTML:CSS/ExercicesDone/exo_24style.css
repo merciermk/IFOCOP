@@ -1,0 +1,3 @@
+.ordonnedList :nth-child(odd) {
+  color: red;
+}

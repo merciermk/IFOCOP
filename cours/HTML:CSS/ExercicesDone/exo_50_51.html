@@ -1,0 +1,88 @@
+<!--
+	La propriété position permet de gérer finement le placement des éléments par rapport au flux.
+  Position peut prendre quatre valeurs:
+  _ absolute
+  _ relative
+  _ fixed
+  _ statique
+
+  La valeur absolute permet de sortir l'élément du flux. On précise ensuite sa position. Ainsi, si l'on souhaite placer un bloc en haut et à gauche, on écrira :
+    #bloc {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    On peux utiliser les propriétés top, bottom, left et right.
+-->
+
+<!--
+	Reproduisez la capture d'écran Exercice 50.jpg. Utilisez seulement la propriété position avec la valeur absolute pour le positionnement de la navigation.
+  Utilisez également cette propriété pour le titre du menu qui doit être contenu dans la balise nav.
+  Que remarquez vous lorsque vous placez cet texte ?
+-->
+
+<!--
+
+  exo 51
+
+	La valeur pour le positionnement peut être négative. Cela permet, par exemple, de masquer un élément qui s'affichera ensuite.
+-->
+
+<!--
+	Reproduisez la capture d'écran Exercice 50a.jpg. Au survol d'une flèche (code html : &rarr;), l'entrée du menu s'affiche ainsi : Exercice 50b.jpg.
+  Astuce : mettez la flèche dans un span pour faire un espace avec le texte.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="exo_50style.css" />
+    <title>exo50</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Title</h1>
+    </div>
+    <nav class="menu">
+      <h3>Menu</h3>
+      <p class="acceuil">Acceuil<span class="acceuil">&rarr;</span></p>
+      <ul class="menu2">
+        <li class="sousmenu1">sousmenu1</li>
+        <li class="sousmenu2">sousmenu2</li>
+        <li class="sousmenu3">sousmenu3</li>
+        <li class="sousmenu4">sousmenu3</li>
+      </ul>
+      <p>Informations<span class="informations">&rarr;</span></p>
+      <p>Contact<span class="contact">&rarr;</span></p>
+    </nav>
+
+    <p class="article">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quas eaque
+      adipisci modi numquam quod sunt, deserunt sint architecto, necessitatibus
+      totam! Nesciunt, voluptatibus ab soluta voluptatem repellat itaque eos
+      alias id ad qui nostrum impedit quod porro consectetur accusantium
+      reiciendis temporibus fuga praesentium explicabo exercitationem. Iusto
+      tenetur voluptate dolorum et! Debitis, soluta. <br />
+      Nihil voluptate cupiditate debitis laborum asperiores, aut maxime maiores
+      nobis iure nisi magni earum eaque quibusdam temporibus voluptatum quis
+      facere. Quaerat, quia itaque dolor quo voluptatibus incidunt? Maxime dolor
+      reprehenderit saepe repudiandae consequuntur, voluptatibus facere velit
+      quae, delectus exercitationem culpa ea, laborum ratione sed porro hic eos!
+      Necessitatibus enim ab odit adipisci illo soluta dignissimos fuga quia
+      vitae perspiciatis excepturi repellat, sint explicabo facilis nihil
+      praesentium vero. Totam commodi explicabo ullam distinctio quos ipsa,
+      dolorum eum fugiat? Earum laudantium velit ea voluptatem debitis
+      accusantium, provident corrupti dignissimos nam, inventore, eveniet
+      excepturi! <br />
+      Cumque quo amet, qui quam minima aspernatur repellendus recusandae,
+      accusamus tempore, praesentium deleniti aut magnam quae assumenda commodi
+      incidunt iusto atque expedita nobis! At ipsam ex, consequuntur perferendis
+      possimus quam id unde consectetur repellat blanditiis? Voluptas, quo quos
+      quis ipsum unde culpa cum repellendus velit minus omnis fuga eligendi
+      harum nemo sed facere iusto exercitationem? Veniam, minus.
+    </p>
+  </body>
+</html>

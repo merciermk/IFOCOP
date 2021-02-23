@@ -1,0 +1,14 @@
+table {
+  border: hotpink 10px solid;
+}
+thead,
+tfoot {
+  border: indigo 2px solid;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  border: lawngreen 2px solid;
+}

@@ -1,0 +1,82 @@
+https://validator.w3.org/
+Site qui permet de valider le code du site. 
+
+https://emmet.io est le site d'emmet. 
+feuille mémo cheat sheet d'emmet :
+https://docs.emmet.io/cheatsheet-a5.pdf
+raccourcis remplissage : loremXXX (x= nombre de mots que l'on souhaite)
+! = raccourci pour creer une page html5
+
+un seul titre H1.
+Utiliser toujours les Balises H dans la globalité. Exemple : ne pas utiliser H3 sans avoir mis H2 et H1 dans la page, peut importe l'ordre. 
+
+Attribut est le nom des balises (class et div).
+
+il est possible d'avoir plusieurs class dans la même balise : class="balise1 balise2";
+
+Balises : 
+
+lien :
+<a title="coucou" href="https://www.blablalbalba.com">Cliquez ici</a>
+en rajoutant title une fenetre s'affiche
+
+images
+<img src="monimage.jpg" alt="Description de l'image"/>
+alt sert a :
+-s'affiche si l'image n'arrive pas 
+-pour les lecteurs ecran (pour les personnes malvoyantes)
+-Référencement
+
+balise inline = ne prend que la place dont il a besoin.
+block = fait un block.
+
+div est une balise de regroupement de type block
+span est une balise de regroupement de type inline 
+
+-----------------------------------------------------
+CSS : 
+
+balise+balise {
+    permet d'aller chercher une balise sous une autre. 
+}
+
+balise>balise{  
+    permet d'aller chercher une balise dans une autre balise. 
+}
+
+class.balise{
+    permet de cibler une balise spécifique qui a une classe commune
+}
+
+text-align : alignement du texte.
+line-height : hauteur de la ligne de texte.
+text-transform : changement de la casse du texte.
+letter-spacing : espacement des lettres
+text-decoration : texte souligné, texte barré …
+
+balise :nth-child(odd) {
+  permet de selectionner un element pair/impair dans ce cas.
+}
+
+balise :last-child {
+ selectionne le dernier enfant de la liste
+}
+
+
+-------------------------------------------------------
+html :
+
+    <figure>
+      <img src="" alt=""/>
+      <figcaption></figcaption>
+    </figure>
+    
+    permet de lier une ou plusieurs photos avec son descriptif. 
+
+form :
+
+    <form action="" method="get">
+    <label for="GET-name">Nom :</label>
+    <input type="text" name="name">
+    <input type="submit" value="Enregistrer">
+    </form>

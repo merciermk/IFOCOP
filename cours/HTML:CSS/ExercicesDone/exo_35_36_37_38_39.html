@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./exo_35style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Faire un form</h1>
+    <form action="" method="post" class="myForm">
+      <div class="myForm">
+        <label for="gender">Mr</label>
+        <input type="radio" name="gender" id="monsieur" />
+        <label for="gender">Mme</label>
+        <input type="radio" name="gender" id="madame" />
+        <label for="gender">Mlle</label>
+        <input type="radio" id="mademoiselle" name="gender" />
+      </div>
+      <div class="myForm">
+        <label for="surname">Votre Prenom</label>
+        <input type="text" name="surname" />
+      </div>
+      <div class="myForm">
+        <label for="name">Votre nom</label>
+        <input type="text" name="name" />
+      </div>
+      <div class="myForm">
+        <label for="adress">Adresse </label>
+        <input type="text" name="adress" />
+      </div>
+      <div class="myForm">
+        <label for="postal">Code Postal</label>
+        <input type="number" name="postal" />
+      </div>
+      <div class="myForm">
+        <label for="city">Ville</label>
+        <input type="text" name="city" />
+      </div>
+      <fieldset class="myForm">
+        <legend>Votre téléphone</legend>
+        <label for="phone">Mobile</label>
+        <input type="radio" id="mobile" />
+        <label for="phone">fixe</label>
+        <input type="radio" name="phone" id="fixe" />
+        <input type="number" name="phone" />
+      </fieldset>
+      <div class="myForm">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" />
+      </div>
+      <div class="myForm">
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" />
+      </div>
+      <div class="myForm">
+        <label for="website">Site internet</label>
+        <input type="url" name="website" />
+      </div>
+      <div class="myForm">
+        <label for="commentaire">vos commentaires</label>
+        <br />
+        <textarea
+          name="commentaire"
+          id="commentaire"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <div class="myForm">
+        <p>centres d'interets:</p>
+        <label for="interest">couture</label>
+        <input type="checkbox" name="interest" id="couture" />
+        <label for="interest">marche</label>
+        <input type="checkbox" name="interest" id="marche" />
+      </div>
+    </form>
+  </body>
+</html>

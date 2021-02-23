@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "introheadr-base";
+  src: url(./introheadr-base-webfont.woff2) format("woff2"),
+    url(./introheadr-base-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: "introheadr-base";
+}
+
+h1 {
+  font-family: "introheadr-base";
+}

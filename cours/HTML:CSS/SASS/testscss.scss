@@ -1,0 +1,22 @@
+$color1: yellow;
+
+h1 {
+  color: $color1;
+  font-size: 2em;
+}
+
+p {
+  color: red;
+}
+
+section {
+  h2 {
+    font-style: oblique;
+  }
+  h2:hover {
+    color: blue;
+  }
+  p {
+    color: green;
+  }
+}

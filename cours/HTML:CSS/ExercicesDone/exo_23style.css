@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h2 {
+  text-align: right;
+}
+
+.para2 {
+  letter-spacing: 10px;
+}
+
+.para2 span {
+  text-decoration: line-through;
+}

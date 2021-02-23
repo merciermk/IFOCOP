@@ -1,0 +1,15 @@
+h1 {
+  color: yellow;
+  font-size: 2em; }
+
+p {
+  color: red; }
+
+section h2 {
+  font-style: oblique; }
+
+section h2:hover {
+  color: blue; }
+
+section p {
+  color: green; }
