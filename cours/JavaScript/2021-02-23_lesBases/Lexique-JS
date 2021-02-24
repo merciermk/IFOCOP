@@ -9,3 +9,6 @@ prompt();               --->    Ouvre une boite de dialogue ou l'user peut ecrir
 
 <noscript></noscript>   --->    Dans le HTML, affiche ce qu'il y a entre les balises si JS est déactivé.
 typeof'Bonjour'         --->    Renvois le type  de la valeur. Dans l'exemple 'string'. 
+
+parseFloat(string)      --->    Transforme une chaine de caractere en nombre flottant. Renvoie NaN si pas de chiffre dans la string
+isNaN()                 --->    Determine si la valeur est NaN (not a number). Si c'est pas un chiffre, elle Renvoie true.

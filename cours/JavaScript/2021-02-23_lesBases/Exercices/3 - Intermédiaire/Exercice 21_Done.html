@@ -20,9 +20,21 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert() et la boucle while.
 			*/
+
+			let exercice21 = function(){
+				var dial1 = null;
+				var dial2 = null;
+				while(dial1 == null || dial1 == ''){
+					dial1 = prompt('saisir votre nom');
+				}
+				while(dial2 == null || dial2 == ''){
+					dial2 = prompt('saisir un age');
+				}
+				alert('Vous êtes ' + dial1 + ' et vous avez ' + dial2 + ' ans');
+			}
 		</script>
 	</head>
-	<body>
+	<body onload="exercice21()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

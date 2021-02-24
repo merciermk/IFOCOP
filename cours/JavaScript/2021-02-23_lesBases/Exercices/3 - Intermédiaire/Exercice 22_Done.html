@@ -30,7 +30,11 @@
 				
 				
 			*/
-			
+			let getNumber = function(){
+				let userNb = prompt('give me a number');
+				userNb = parseFloat(userNb);
+				alert(userNb);
+			}
 			/*
 			** 2 **
 				Améliorez le programme (algorithme) précédent :
@@ -41,22 +45,40 @@
 
 				Utilisez l'attribut d'événement onload(), la fonction prompt(), la fonction alert(), la fonction parseFloat() et la fonction isNaN().
 			*/
-			
+			let getNumberEvo = function(){
+				let userNb = prompt('give me a number');
+				userNb = parseFloat(userNb);
+				if(isNaN(userNb) == true){
+					alert('This is not a number');
+				} else {
+					alert('The number is: ' + userNb);
+				}
+			}
 			/*	
 			** 3 **
 				Réalisez le programme (algorithme) suivant :
 				Quand l'utilisateur clique sur le premier paragraphe, demandez-lui de saisir un nombre.
 				S'il n'a pas saisi un nombre, affichez le message « Vous devez saisir un nombre ».
-				Sinon, affichez le message « Merci d'avoir saisi un nombre ».
+				Sinon, affichez le message «  ».
 
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert(), la fonction parseFloat(), la fonction isNaN() et un bloc conditionnel if/else.			
 			*/
+			let getNumberOnClick = function(){
+				let userNb = NaN;
+				
+				while(isNaN(userNb) == true){
+					userNb = prompt('Vous devez saisir un nombre');
+					userNb = parseFloat(userNb);
+				} 
+				alert(`Merci d'avoir saisi un nombre`);
+			
+			}
 		</script>
 	</head>
-	<body>
+	<body onload="getNumberEvo()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="getNumberOnClick()">Cliquez ici pour getNumberOnClick()</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>
