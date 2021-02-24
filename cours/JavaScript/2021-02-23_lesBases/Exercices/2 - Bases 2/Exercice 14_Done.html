@@ -13,7 +13,14 @@
 
 				Utilisez l'attribut d'événement onload, la fonction confirm(), la fonction alert() et un bloc conditionnel if/else.
 			*/
-				
+				var confirmFunction = function(){
+					var confirmation = confirm('Voulez vous continuer?');
+					if(confirmation == true){
+						alert('vous avez cliqué sur ok')
+					} else {
+						alert('vous avez choisi d\'annuler');
+					}
+				}
 			/*
 			** 2 **
 				Réalisez le programme (algorithme) suivant :
@@ -22,7 +29,7 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction confirm(),la fonction alert() et un bloc conditionnel if/else
 			*/
-				
+				//Don avec onclick sur paragraphe.
 			/*
 			** 3 **
 				Réalisez le programme (algorithme) suivant :
@@ -33,9 +40,9 @@
 			*/
 		</script>
 	</head>
-	<body>
-		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+	<body onload="confirmFunction()">
+		<h1 onmouseover="confirmFunction()">Mon nouveau document</h1>
+		<p onclick="confirmFunction()">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>

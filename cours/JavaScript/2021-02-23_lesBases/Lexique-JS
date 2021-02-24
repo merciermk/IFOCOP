@@ -1,5 +1,6 @@
 onload=""               --->    s'éxécute aprés que la page soit loader.
 onclick=""              --->    Dans le html, permet de faire une action au click. 
+onmouseover=""          --->    Action au survol de la souris
 
 alert('message')        --->    ouvre une fenetre avec un texte
 console.log();          --->    Affiche une information dans la console
