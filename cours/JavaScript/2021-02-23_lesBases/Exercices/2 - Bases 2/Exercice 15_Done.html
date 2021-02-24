@@ -23,12 +23,35 @@
 			*********************************
 				Réalisez le programme (algorithme) suivant :
 				Au CHARGEMENT du document, j'affiche une B.d.D contenant le message « Voulez vous continuer ? ». TANT QUE l'utilisateur clique sur OK j'affiche une b.d.d avec le message « Voulez vous continuer ? ».
-
+				
 				Utilisez l'attribut d'événement onload, la fonction confirm() et une boucle while.
 			*/
-		</script>
+
+					// Solution 1
+
+			// var firstLoop = function(){
+			// 	let userConfirm = false;
+			// 	while(userConfirm == false){
+			// 			userConfirm = confirm('voulez vous continuer?');
+			// 	}
+			// 	console.log('userConfirm = ' + userConfirm);
+			// 	return userConfirm;
+			// }
+
+						//Solution II
+
+						
+			var firstLoop = function(){
+				let userConfirm = confirm('voulez vous continuer?');
+				while(userConfirm == false){
+						userConfirm = confirm('voulez vous continuer?');
+				}
+				console.log('userConfirm = ' + userConfirm);
+				return userConfirm;
+			}
+			</script>
 	</head>
-	<body>
+	<body onload="firstLoop()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

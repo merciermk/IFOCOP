@@ -4,7 +4,8 @@ onmouseover=""          --->    Action au survol de la souris
 
 alert('message')        --->    ouvre une fenetre avec un texte
 console.log();          --->    Affiche une information dans la console
-confirm();              --->    Ouvre une boite de dialogue
+confirm();              --->    Ouvre une boite de dialogue ok/annulé
+prompt();               --->    Ouvre une boite de dialogue ou l'user peut ecrire.
 
 <noscript></noscript>   --->    Dans le HTML, affiche ce qu'il y a entre les balises si JS est déactivé.
 typeof'Bonjour'         --->    Renvois le type  de la valeur. Dans l'exemple 'string'. 
