@@ -26,12 +26,19 @@
 				_ ne saisit rien et clique sur Ok ?
 				_ saisit un texte et clique sur Ok ?
 			*/
+
+			var userSay = function(){
+				let userPrompt = prompt('Ecrivez du texte');
+				console.log(userPrompt);
+				return userPrompt;
+			}
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
+		<h2 onclick="userSay()">Cliquez ici pour saisir du texte</h2>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>
