@@ -29,17 +29,30 @@
 			**********************************
 			** 1 **
 				Reprenez le code de l'exercice précédent au point 1 en utilisant une boucle for au lieu d'un while.
+				compter jusqu'a 3 avec boucle for et l'afficher chaque comptage dans alert. 
 			*/
-			
+			let untilThree = function(){
+				for(i = 0;i < 3; i++){
+					alert(i);
+				}
+				alert('Done');
+			}
 			/*
 			** 2 **
 				Reprenez le code de l'exercice précédent au point 2 en utilisant une boucle for au lieu d'un while.
+				Afficher texte en 3 parties dans 3 alerts. 
 			*/
-			
+			let text1 = function(){
+				let textA = ['le petit ', 'Bonhomme ', 'en mousse.'];
+				
+				for(i=0; i < 3 ; i++){
+					alert(textA[i]);
+				}
+			}
 
 		</script>
 	</head>
-	<body>
+	<body onload="untilThree()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

@@ -14,9 +14,19 @@
 				_ Sinon (si l'utilisateur n'a pas cliqué sur Annulé ET n'a pas rien saisi), j'affiche la saisie de l'utilisateur dans une B.d.D.
 
 			*/
+			var dialBox = function(){
+				let userSay = prompt('Ecrivez ici');
+				if(userSay == null){
+					alert("Vous avez annulé la saisie");
+				} else if( userSay == ''){
+					alert('Vous n\'avez rien saisie');
+				} else{
+					alert('vous avez saisie: ' + userSay);
+				}
+			}
 		</script>
 	</head>
-	<body>
+	<body onload="dialBox()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

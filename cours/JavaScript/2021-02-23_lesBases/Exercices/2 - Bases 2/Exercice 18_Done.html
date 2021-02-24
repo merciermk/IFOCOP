@@ -14,12 +14,20 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert() et une boucle while.
 			*/
+
+			let userSay = function(){
+				let let1 = null;
+				while(let1 == null || let1 == ''){
+					let1 = prompt('saisissez du texte');
+				}
+				alert('vous avez saisie: ' + let1);
+			}
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="userSay()">Cliquez ici</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>

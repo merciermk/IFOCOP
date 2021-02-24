@@ -43,7 +43,13 @@
 				
 				Utilisez la boucle while avec un compteur ainsi que la fonction alert().
 			*/
-			
+			let counting = function(){
+				let i = 0;
+				while(i < 3){
+					alert('Mon compteur est à: ' + i);
+					i++;
+				}
+			}
 			/*
 			** 2 **
 				Réalisez le programme (algorithme) suivant :
@@ -51,9 +57,29 @@
 				
 				Utilisez la boucle while avec un compteur ainsi que la fonction alert().
 			*/
+			let text1 = function(){
+				let textA = ['le petit ', 'Bonhomme ', 'en mousse.'];
+				let i = 0;
+				while(textA[i] != undefined){
+					alert(textA[i]);
+					i++;
+				}
+			}
+
+			let solutionTwo = function(){
+				let textA = ['le petit ', 'Bonhomme ', 'en mousse.'];
+				let y = textA.length;
+				let i = 0;
+				while(i != y){
+					alert(textA[i]);
+					i++;
+				}
+				alert(i);
+			}
+
 		</script>
 	</head>
-	<body>
+	<body onload="solutionTwo()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
