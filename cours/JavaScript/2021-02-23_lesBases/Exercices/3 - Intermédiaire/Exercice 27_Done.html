@@ -13,9 +13,21 @@
 				
 				Il n'est pas nécessaire pour la seconde boucle for d'utiliser, par exemple, i < 4 comme limite pour la boucle. Regardez l'indication de l'Exercice 27bis pour trouver la solution.
 			*/
+			let userSentence = function(){
+				let array = [];
+				let y = 0;
+				for(i=0; i <= 3; i++){
+					array[i] = prompt("Ecrivez le mot numéro " + (i + 1));
+				}
+				while (array[y]){
+					alert('Le mot numero ' + (y+1) +  ' est ' + array[y]);
+					y++
+				}
+			}
+			
 		</script>
 	</head>
-	<body>
+	<body onload="userSentence()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

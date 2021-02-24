@@ -16,12 +16,35 @@
 				_ La fonction prend en argument le message qui s'affichera à l'utilisateur lors de la saisie. 
 				_ La fonction retourne le nombre saisi par l'utilisateur. 
 			*/
+			let checkUserNumber = function(number){
+				
+			}
+			let addition = function(){
+				let number1 = NaN;
+				let number2 = NaN;
+				while(isNaN(number1) == true){
+					number1 = prompt('Saisir le premier chiffre');
+					number1 = parseFloat(number1);
+					if(isNaN(number1) == true){
+						alert(`Ceci n\'est pas un chiffre, recommencez`);
+					}
+				}		
+				while(isNaN(number2) == true){
+					number2 = prompt('Saisir le deuxième chiffre');
+					number2 = parseFloat(number2);
+					if(isNaN(number2) == true){
+						alert('Ceci n\'est pas un chiffre, recommencez');
+					}
+				}		
+				alert('la somme des deux chiffres est : ' + (number1 + number2));
+				}
+			
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="">Function addition, cliquez ici</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>

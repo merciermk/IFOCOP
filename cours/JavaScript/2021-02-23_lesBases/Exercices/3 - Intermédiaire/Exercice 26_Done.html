@@ -17,9 +17,18 @@
 				Utilisez l'attribut d'événement onload, la fonction prompt(), une boucle for, une boucle while et la fonction alert().
 				
 			*/
+			let userSentence = function(){
+				let array = [];
+				for(i=0; i <= 3; i++){
+					array[i] = prompt("Ecrivez le mot numéro " + (i + 1));
+				}
+
+				alert(array);
+			}
+
 		</script>
 	</head>
-	<body>
+	<body onload="userSentence()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

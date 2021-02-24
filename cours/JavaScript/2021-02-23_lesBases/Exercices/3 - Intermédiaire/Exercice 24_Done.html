@@ -13,12 +13,32 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert(), la fonction parseFloat(), la fonction isNaN() et des boucles while.
 			*/
+
+			let addition = function(){
+				let number1 = NaN;
+				let number2 = NaN;
+				while(isNaN(number1) == true){
+					number1 = prompt('Saisir le premier chiffre');
+					number1 = parseFloat(number1);
+					if(isNaN(number1) == true){
+						alert(`Ceci n\'est pas un chiffre, recommencez`);
+					}
+				}		
+				while(isNaN(number2) == true){
+					number2 = prompt('Saisir le deuxième chiffre');
+					number2 = parseFloat(number2);
+					if(isNaN(number2) == true){
+						alert('Ceci n\'est pas un chiffre, recommencez');
+					}
+				}		
+				alert('la somme des deux chiffres est : ' + (number1 + number2));
+				}
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="addition()">Cliquez pour faire une addition</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>

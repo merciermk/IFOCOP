@@ -13,9 +13,21 @@
 
 				Utilisez l'attribut d'événement onload, la fonction prompt(), la fonction parseFloat(), la fonction isNaN() et d'une boucle while.
 			*/
+
+			let getUserNumber = function (){
+				let getNumber = NaN;
+				while(isNaN(getNumber) == true){
+					getNumber = prompt('Saisir un nombre');
+					parseFloat(getNumber);
+					if (isNaN (getNumber) == true) {
+						alert(`Ce n'est pas un chiffre, veuillez recommencer.`);
+					}
+				}
+				alert('votre chiffre est le : ' + getNumber);
+			}
 		</script>
 	</head>
-	<body>
+	<body onload="getUserNumber()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
