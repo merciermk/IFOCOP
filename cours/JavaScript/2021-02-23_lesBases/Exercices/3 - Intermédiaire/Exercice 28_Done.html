@@ -14,9 +14,24 @@
 				
 				Utilisez l'attribut d'événement onload, la fonction prompt(), une boucle for, des boucles while et la fonction alert().
 			*/
+
+			var getUserSentence = function(){
+				let array = [];
+				let userStop = null;
+				let i = 0;
+				while(userStop != false){
+					array[i] = prompt('Quel mot voulez vous ajouter?');
+					userStop = confirm('voulait vous ajouter un mot?');
+					i++;
+				}
+
+				for(y=0; y < i; y++){
+					alert('Votre mot numéro ' + (y +1) + ' est ' + array[y]);
+				}
+			}
 		</script>
 	</head>
-	<body>
+	<body onload="getUserSentence()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
