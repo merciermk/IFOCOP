@@ -14,11 +14,28 @@
 					_ Si l'utilisateur saisit un texte, ce texte est utilisé comme url pour ouvrir une nouvelle fenêtre.
 					_ Sinon un message s'affiche dans une b.d.d avec le texte : « Tant pis ! ».
 			*/
+			var userWantGoogle = function(){
+				var googleChoice = confirm('Voulez vous aller sur google?')
+				var otherURL = "";
+				if(googleChoice){
+					open('http://google.com', 'Google', "resizable=yes,scrollbars=yes,status=yes");
+				} else{
+					otherURL = prompt('Veuillez saisir l\'url d\'un site alternatif');
+				}
+				while(otherURL == ""){
+					otherURL = prompt('Erreur, vous n\'avez pas saisie d\'url');
+				}
+				if (otherURL) {
+					open('http://' + otherURL + '.com', otherURL , "resizable=yes,scrollbars=yes,status=yes");
+				}else{
+					alert('Tant pis !');
+				}
+			}
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+		<p onclick="userWantGoogle()">Cliquez pour demarrer la fonction</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
