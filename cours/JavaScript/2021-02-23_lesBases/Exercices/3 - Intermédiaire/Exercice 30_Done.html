@@ -11,9 +11,26 @@
 				Quand l'utilisateur sur le premier paragraphe, affichez une B.d.D avec champ de saisie à l'utilisateur.
 				L'utilisateur doit impérativement saisir une chaîne de caractère. Cette chaîne de caractère est ensuite utilisée pour ouvrir une nouvelle fenêtre à l'aide de la fonction open.
 			*/
+
+			var getUserChoice = function(){
+				var choiceURL = "";
+				if(choiceURL == ""){
+					choiceURL = prompt('Taper google ou duck pour acceder au moteur de recherche');
+				}
+				console.log(choiceURL);
+				while (choiceURL != 'duck' && choiceURL != 'google'){
+					choiceURL = prompt("une erreur c\'est produite, tapez google ou duck");
+					console.log(choiceURL);
+				}
+				if(choiceURL == 'google'){
+					open('http://google.com', 'Google', "resizable=yes,scrollbars=yes,status=yes");
+				} else if (choiceURL == 'duck') {
+					open('http://duckduckgo.com', 'duck', "resizable=yes,scrollbars=yes,status=yes");
+				} 
+			}
 		</script>
 	</head>
-	<body>
+	<body onload="getUserChoice()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
