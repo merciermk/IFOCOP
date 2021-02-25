@@ -38,12 +38,20 @@
 				Quand il clique sur le premier paragraphe ouvrez une fenêtre vers Bing.
 				Quand il survole sur le troisième paragraphe ouvrez une fenêtre vers DuckDuckGo.
 			*/
+			var onClickLink = function (){
+				open('http://www.google.com', 'hello', 'directories=yes','menubar=yes');
+			};
+
+			var onMouseOverLink = function(){
+				open('http://www.duckduckgo.com','Duck Duck Go', 'directories=yes')
+			}
+
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="onClickLink()">Cliquez pour aller sur google</p>
+		<p onmouseover="onMouseOverLink()">Survoler pour aller sur DuckDuckGo</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>
