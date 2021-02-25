@@ -12,11 +12,26 @@
 				Tant que l'ensemble du tableau n'a pas été parcouru, utilisez l'url contenue dans la case du tableau sur laquelle vous vous trouvez pour ouvrir une nouvelle fenêtre.
 				Utilisez une boucle while... avec un compteur de tours.
 			*/
+
+			var fiveSite = ['https://www.youtube.com/','https://www.google.com/', 'https://www.facebook.com/', 'http://www.ladureviedulapinurbain.com/', 'http://sitenul.toubkal.org/'];
+
+			var spamWebSite = function(array){
+				let userConf;
+				let i = 0;
+				while(array[i] != undefined){
+					userConf = confirm( 'Voulez vous ouvrir ' + array[i])
+					if(userConf){
+					open(array[i], i , 'resizable=yes,scrollbars=yes,status=yes');
+					}
+					i++;
+				}
+				alert("nous avons ouvert " + (i+1) + 'sites, merci') ;
+			}
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+		<p onclick="spamWebSite(fiveSite)">Cliquez ici pour ouvrir 5 sites</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
