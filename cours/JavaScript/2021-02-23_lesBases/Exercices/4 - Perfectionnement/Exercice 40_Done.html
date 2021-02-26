@@ -33,24 +33,33 @@
 			** 1 **
 				Affichez un message dans une B.d.D au bout de 5 sec.
 			*/
+			function coucou(){
+				setTimeout("alert('coucou')", 5000);
+			}
+			
 
 			/*
 			** 2 **
 				Que fait la fonction setInterval() ? Pour ce faire, testez la fonction en adaptant la fonction précédente.
 			*/
-
+			function coucouInterval(){
+				setInterval("alert('coucou')", 5000);
+			}
 			/*
 			** 3 **
 				Quand l'utilisateur clique sur un paragraphe, démarrez une fonction setInterval() qui déclenche l'apparition d'une B.d.D au bout de 5 sec.
 				Quand l'utilisateur clique sur un autre paragraphe, arrêtez l'apparition de la B.d.D au bout de 5 sec.
 			*/
+			function myStopFunction(interval) {
+  				clearInterval(interval);
+							}
 
 		</script>
 	</head>
 	<body>
 		<h1 >Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="coucouInterval()">Premier paragraphe</p>
+		<p onclick="myStopFunction(coucouInterval)">Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>

@@ -24,6 +24,19 @@
 				Créez une fonction acceptant un nombre variable d'arguments en entrée. Cette fonction calcule la moyenne des valeurs passées en entrée au moyen d'une boucle while et retourne cette valeur.
 				Affichez dans une boite de dialogue la moyenne d'au-moins quatre nombre entiers.
 			*/
+			var tryArguments = function(){
+				
+				let somme = 0;
+				let moyenne = 0;
+				for(i=0; i != arguments.length ; i++ ){
+					somme += arguments[i];
+					console.log(arguments[i])
+				}
+				moyenne = somme / arguments.length;
+				return moyenne;
+			}
+
+			alert('la moyenne des chiffre est: ' + tryArguments(0,1));
 
 		</script>
 	</head>

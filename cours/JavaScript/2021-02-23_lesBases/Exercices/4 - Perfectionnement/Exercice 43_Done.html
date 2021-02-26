@@ -7,7 +7,7 @@
 			/*********************************
 			***********PRESENTATION***********
 			**********************************
-				La fonction parseInt() renvoie la valeur entière d'un nombre. Par exemple, parseInt(4.7) renvoie 4.
+				//La fonction parseInt() renvoie la valeur entière d'un nombre. Par exemple, parseInt(4.7) renvoie 4.
 
 			/*********************************
 			*************EXERCICE*************
@@ -19,10 +19,42 @@
 				_ s'il répond samedi ou dimanche, vous affichez une quatrième réponse.
 			*/
 
+			
+			var userBirthday = function(){
+				let getUserAnswer = undefined;
+				while(!getUserAnswer || getUserAnswer < 1 || getUserAnswer > 7){
+					getUserAnswer = prompt('Donnez votre jour de naissance avec un chiffre entier (1 a 7)');
+					getUserAnswer = parseInt(getUserAnswer);
+				}
+				switch(getUserAnswer){
+					case 1:
+						alert('C\'etait un lundi');
+						break;
+					case 2:
+						alert('C\'etait un Mardi');
+						break;
+					case 3:
+						alert('C\'etait un mercredi');
+						break;
+					case 4: 
+						alert('C\'etait un jeudi');
+						break;
+					case 5:
+						alert('C\'etait un Vendredi');
+						break;
+					case 6:
+						alert('C\'etait un Samedi');
+						break;
+					case 7:
+						alert('C\'etait un Dimanche');
+						break;
+				}
+
+			}
 
 		</script>
 	</head>
-	<body>
+	<body onload="userBirthday()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

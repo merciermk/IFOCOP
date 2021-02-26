@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>JavaScript : Exercice 37</title>
+		<script>
+			/*********************************
+			*************EXERCICE*************
+			**********************************
+				Réalisez le programme (algorithme) suivant :
+				a) Affichez une boite de dialogue à l'utilisateur lui demande un nombre. Tant qu'il saisit un nombre, demandez-lui un autre nombre nombre. L'ensemble des réponses doit être enregistrée dans une seule variable.
+				b) Si l'utilisateur a saisi au-moins un nombre, faites la moyenne du/des nombre(s) saisi(s) en utilisant un boucle for.
+			*/
+			// - demander la valeur de l'utilisateur,
+			// - la sauvegarder
+			// - lui demander s'il veut continuer
+			// 			- true > redemander un chiffre 
+			// 						la sauvegarder dans la meme var
+			// 			- false > afficher le resultat. 
+
+			let userWantAverage = function(){
+				let userNumber = 0;
+				let array = [];
+				let i = 0;
+				while(userNumber != null){
+					userNumber = prompt('chiffre');
+					parseFloat(userNumber);
+					if(userNumber == null){
+						return array;
+					}else{
+						
+						array[i] = userNumber;
+						i++;
+					}
+				}
+			}
+
+
+
+			var calculAverage = function(userWantAverage){
+				
+				var getArray = userWantAverage;
+				console.log(getArray)
+				var somme = 0;
+				let average;
+				for(i=0; i != getArray.length; i++){
+					
+					somme += parseFloat(getArray[i]);
+					
+				}
+				
+				average = somme / userWantAverage.length;
+				console.log(somme);
+				console.log(average);
+
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Mon nouveau document</h1>
+		<p onclick="calculAverage(userWantAverage())">Premier paragraphe</p>
+		<p>Deuxième paragraphe</p>
+		<noscript>
+			<p>Veuillez activer JavaScript</p>
+		</noscript>
+	</body>
+</html>
