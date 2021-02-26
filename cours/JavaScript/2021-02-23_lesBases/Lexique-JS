@@ -14,9 +14,11 @@ parseFloat(string)              --->    Transforme une chaine de caractere en no
 parseInt()                      --->    
 isNaN()                         --->    Determine si la valeur est NaN (not a number). Si c'est pas un chiffre, elle Renvoie true.
 
-open()                          --->    ouvre une fenetre avec un lien, peut prendre plusieurs valeurs. exemple: open('http://www.google.com','Google','directories=no,menubar=no');
+open()                          --->    ouvre une fenetre avec un lien, peut prendre plusieurs valeurs. exemple: open('http://www.google.com',                                   'Google','directories=no,menubar=no');
                                         doc : https://developer.mozilla.org/fr/docs/Web/API/Window/open
 
 setTimeout(function,time)       --->    Appelle une fonction a la fin du temps. Le temps est exprimé en millisecondes.
 setInterval("function", time)   --->    like setTimeout mais fait des intervales. Temps en millisecondes;
 clearInterval(interval)         --->    pour stopper l'intervale;
+
+arguments.
