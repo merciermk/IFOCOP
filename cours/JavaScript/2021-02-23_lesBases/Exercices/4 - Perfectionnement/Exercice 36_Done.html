@@ -30,13 +30,72 @@
 				alert(monTableau['length']); //affiche 3;
 				Modifiez la boucles de cet exercice en utilisant ['length'].
 			*/
+			let arrayNumbers = [4,2,3,4];
+
+			// let addition = function(array){
+			// 	let count = 0;
+			// 	for(i=0; array[i] != undefined; i++ ){
+			// 		count += array[i];
+			// 	}
+			// 	return count;
+			// }
+
+			// let multiplication = function(array){
+			// 	let count = 1;
+			// 	for(i=0; array[i] != undefined; i++ ){
+			// 		count *= array[i];
+			// 	}
+			// 	console.log(count);
+			// 	return count;
+			// }
+
+			let add = function(number, number2){
+				return (number + number2);
+			}
+
+			let multi = function(number, number2){
+				return (number * number2);
+			}
+
+			let userChoice = function(){
+				var choice = undefined;
+				choice = confirm('voulez vous addition?');
+				if(choice){
+					return 'addition';
+				}else {
+					choice = confirm('voulez vous multiplier les chiffres?');
+					if (choice){
+						return 'multiplication';
+					}
+
+				}
+			}
+
+			let calculator = function(arrayNumbers){
+				let user = userChoice()
+				let calc = null;
+				if(user == 'addition'){
+					for(i=0; i != arrayNumbers.length ; i++){
+					calc = add(calc, arrayNumbers[i]);
+					}
+				} else if(user == 'multiplication') {
+					for(y=0; y != arrayNumbers.length ; y++){
+						if(calc == null){
+							calc = 1;
+						}
+					calc = multi(calc, arrayNumbers[y]);
+					console.log(calc);
+					}
+				}
+				alert('le resultat de votre ' + user + ' est:' + calc);
+			}
 
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="calculator(arrayNumbers)">cliquez pour tester calculator</p>
+		<p onclick="">cliquez pour tester multiplication</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>

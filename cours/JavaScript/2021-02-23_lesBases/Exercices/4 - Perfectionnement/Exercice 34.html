@@ -17,9 +17,20 @@
 				Les deux saisies successives sont stockées dans la même variable. Affichez le contenu de cette variable dans une B.d.D.
 				Que se passe-t-il si je fait précéder, la fonction, le nom de la variable par le mot-clef var ? Pourquoi ?
 				*/
+				var checkUserAnswer = function(userAnswer){
+					let getPrompt;
+					while(getPrompt == undefined || getPrompt == ""){
+						getPrompt = prompt("entrer une valeur");
+					}
+					return getPrompt;
+				};
+				
+			
+
+
 		</script>
 	</head>
-	<body>
+	<body onload="getUserAnswer()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

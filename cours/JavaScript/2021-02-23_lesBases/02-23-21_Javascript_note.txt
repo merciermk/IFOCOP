@@ -111,3 +111,5 @@ false || false = false
 >	-> plus grand que
 >=	-> plus grand ou egal à
 
+
+

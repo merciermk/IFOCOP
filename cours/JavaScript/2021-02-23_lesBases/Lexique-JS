@@ -1,18 +1,19 @@
-onload=""               --->    s'éxécute aprés que la page soit loader.
-onclick=""              --->    Dans le html, permet de faire une action au click. 
-onmouseover=""          --->    Action au survol de la souris
+onload=""                       --->    s'éxécute aprés que la page soit loader.
+onclick=""                      --->    Dans le html, permet de faire une action au click. 
+onmouseover=""                  --->    Action au survol de la souris
 
-alert('message')        --->    ouvre une fenetre avec un texte
-console.log();          --->    Affiche une information dans la console
-confirm();              --->    Ouvre une boite de dialogue ok/annulé
-prompt();               --->    Ouvre une boite de dialogue ou l'user peut ecrire.
+alert('message')                --->    ouvre une fenetre avec un texte
+console.log();                  --->    Affiche une information dans la console
+confirm();                      --->    Ouvre une boite de dialogue ok/annulé
+prompt();                       --->    Ouvre une boite de dialogue ou l'user peut ecrire.
 
-<noscript></noscript>   --->    Dans le HTML, affiche ce qu'il y a entre les balises si JS est déactivé.
-typeof'Bonjour'         --->    Renvois le type  de la valeur. Dans l'exemple 'string'. 
+<noscript></noscript>           --->    Dans le HTML, affiche ce qu'il y a entre les balises si JS est déactivé.
+typeof'Bonjour'                 --->    Renvois le type  de la valeur. Dans l'exemple 'string'. 
 
-parseFloat(string)      --->    Transforme une chaine de caractere en nombre flottant. Renvoie NaN si pas de chiffre dans la string
-isNaN()                 --->    Determine si la valeur est NaN (not a number). Si c'est pas un chiffre, elle Renvoie true.
+parseFloat(string)              --->    Transforme une chaine de caractere en nombre flottant. Renvoie NaN si pas de chiffre dans la string
+isNaN()                         --->    Determine si la valeur est NaN (not a number). Si c'est pas un chiffre, elle Renvoie true.
 
-open()                  --->    ouvre une fenetre avec un lien, peut prendre plusieurs valeurs. exemple: open('http://www.google.com','Google','directories=no,menubar=no');
-                                doc : https://developer.mozilla.org/fr/docs/Web/API/Window/open
+open()                          --->    ouvre une fenetre avec un lien, peut prendre plusieurs valeurs. exemple: open('http://www.google.com','Google','directories=no,menubar=no');
+                                        doc : https://developer.mozilla.org/fr/docs/Web/API/Window/open
 
+setTimeout(function,time)       --->    Appelle une fonction a la fin du temps. Le temps est exprimé en millisecondes. 
