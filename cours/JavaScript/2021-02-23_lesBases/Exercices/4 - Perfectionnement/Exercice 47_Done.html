@@ -13,10 +13,25 @@
 
 				Exemple : pour 101, les digits sont 1, 0, 1, il y a donc 3 digits.
 			*/
+
+			let test = 1234;
+
+			function digit(numbers){
+				let i = numbers;
+				let theDigit = 0;
+				while(i >= 1){
+					i = i / 10;
+					theDigit++;
+				}
+				
+				alert(theDigit)
+				return theDigit;
+			}
+			
 		</script>
 	</head>
 	<body>
-		<h1>Mon nouveau document</h1>
+		<h1 onclick="digit(12345)">Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
