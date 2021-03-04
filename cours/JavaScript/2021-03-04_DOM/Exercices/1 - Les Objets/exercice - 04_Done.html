@@ -14,7 +14,13 @@
         - Son prénom est une chaîne de caractères;
         - Sa discipline enseignée est une chaîne de caractères.
       */
-
+      var enseignant = {
+        age: 35,
+        present: true,
+        nom: 'FARNSWORTH',
+        prenom: 'Hubert',
+        discipline: 'Vol interstellaire'
+      }
       /*
         2. Créez 1 objet JSON. Cet objet représente une classe.
         Il a 3 propriétés : son numéro, sa spécialité, son enseignant.
@@ -22,7 +28,11 @@
         - Sa spécialité est une chaîne de caractères;
         - Son enseignant est un objet.
       */
-      
+      var classe = {
+        numeroClasse: 12,
+        specialite: 'Math',
+        enseignant: enseignant,
+      }
       /*
         3. Créez 3 objets JSON. Ces objets représentent des élèves.
         Chaque élève a 4 propriétés : son nom, son prénom, son âge, sa présence.
@@ -31,21 +41,49 @@
         - Son nom est une chaîne de caractères;
         - Son prénom est une chaîne de caractères.
       */
+      var eleve1= {
+        age: 23,
+        present: true,
+        nom: 'RODRIGUEZ',
+        prenom: 'Bender',
+      }
+
+      var eleve2= {
+        age: 45,
+        present: true,
+        nom: 'J.Fry',
+        prenom: 'Philip',
+      }
+
+      var eleve3= {
+        age: 23,
+        present: true,
+        nom: 'TURANGA',
+        prenom: 'Leela',
+      }
+
 
       /*
         4. Ajoutez une nouvelle propriété dans l'objet représentant la classe. Cette propriété sera les élèves. Elle devra contenir les 3 références vers les 3 objets représentant chacun des 3 élèves.
         - Les élèves est un tableau.
       */
-      
+      classe.eleves = [eleve1,eleve2,eleve3];
       /*
         5. Changez la propriété de présence du 2ème élève de la liste d'élèves de la classe.
       */
-      
+      eleve2.present = false;
       /*
         6. Réalisez l'algorithme suivant :
         POUR CHAQUE élève dans la classe, AFFICHEZ dans un boite de dialogue le message (où X et Y sont les prénoms et noms de l'élève considéré): 'Je suis X Y et je suis présent'. 
       */
+    
+          var i = 0;
+          while(i != classe.eleves.length ){
+            alert(`Je suis ${classe.eleves[i].prenom} ${classe.eleves[i].nom} et je suis présent`);
+            i++;
+          };
       
+     
       /*
         7. Assurez vous que les booléens de présence des élèves ne sont pas tous les mêmes. Réalisez l'algorithme suivant : 
         POUR CHAQUE élève dans la classe, SI sa propriété présence est vraie, AFFICHEZ dans un boite de dialogue le message (où X et Y sont les prénoms et noms de l'élève considéré): 'Je suis X Y et je suis présent'. 

@@ -8,20 +8,45 @@
       /*
       1. Dans les exercices de JavaScript "procédural" vous avez créé plusieurs fonctions. Vous devez regrouper toutes ces fonctions (au moins 5 d’entre-elles) dans un objet en JSON. Déclarez un objet dans lequel chaque propriété contiendra une fonction parmi celles créées précédemment.
       */
+      var myObjectwithFiveFunction = {
+        hello: function(){
+          alert('Hello');
+        },
+        addition: function(number1,number2){
+          alert('Addition = ' + (number1 + number2));
+        },
+        soustraction: function(number1, number2){
+          alert('soustraction = ' + (number1 - number2));
+        },
+        multi: function(number1,number2){
+          alert('multiplication =' + (number1 * number2));
+        },
+        confirmation: function (){
+					var userConfirm = confirm('Voulez-vous continuer?');
+					if(userConfirm){
+						alert('Vous avez cliqué sur OK');
+					};
+				},
+      }
+
       
       /*
       2. Exécutez chacune des méthodes créés dans cet objet pour les tester.
+      myObjectwithFiveFunction.hello();
+      myObjectwithFiveFunction.addition(3, 3);
+      myObjectwithFiveFunction.soustraction(10, 5);
+      myObjectwithFiveFunction.multi(4,2);
+      myObjectwithFiveFunction.confirmation();
       */
-
+     
       /*
       3. Déclarez 1 objet JSON qui contient :
-
       -> 1 propriété qui contient une méthode (fonction dans une propriété) :
         - qui prend en argument 1 nombre.
         - qui affiche ce nombre dans une une boîte de dialogue.
         - qui RETOURNE ce nombre multiplié par 100.
       -> Exécutez cette méthode et AFFICHEZ la VALEUR DE RETOUR dans une boîte de dialogue.
-
+      
       -> 1 propriété qui contient une méthode :
         - qui prend en argument 1 texte.
         - qui affiche ce texte dans une boîte de dialogue.
@@ -41,6 +66,49 @@
         - qui RETOURNE 1 objet de 5 propriétés.
       -> Exécutez cette méthode et AFFICHEZ la valeur de la 4ème propriété de la VALEUR DE RETOUR dans une boîte de dialogue.
       */
+     var objet3 = {
+       multi: function(number){
+        alert('le chiffre est:' + number);
+        return (number * 100);
+       },
+       friend: function(string){
+         alert(string);
+         return 'Hello ' + string;
+       },
+       threeArray: function(array){
+        if(array.length != 3){
+          
+          return "Pas la bonne taille";
+        }else{
+        alert('index1 = ' + array[1]);
+        array[1] = array[2];
+        return array;
+        }
+       },
+       myNumber: function(object){
+        object.number4 += object.number1 + object.number2 + object.number3 + object.number5;
+        return object;
+       },
+     }
+
+
+
+     var myArray = ['bonjour', 'ca va', '?'];
+
+     var objectFiveNumbers = {
+       number1: 12,
+       number2: 15,
+       number3: 30,
+       number4: 42,
+       number5: 50,
+     }
+
+    //  alert(objet3.multi(10));
+    //  alert(objet3.friend('Friend'));
+    //  alert(objet3.threeArray(myArray)[2]);
+    //  alert(objet3.myNumber(objectFiveNumbers)[4]);
+    alert(objet3.myNumber(objectFiveNumbers).number4);
+
     </script>
   </head>
   <body>
