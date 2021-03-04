@@ -77,17 +77,24 @@
         POUR CHAQUE élève dans la classe, AFFICHEZ dans un boite de dialogue le message (où X et Y sont les prénoms et noms de l'élève considéré): 'Je suis X Y et je suis présent'. 
       */
     
-          var i = 0;
-          while(i != classe.eleves.length ){
-            alert(`Je suis ${classe.eleves[i].prenom} ${classe.eleves[i].nom} et je suis présent`);
-            i++;
-          };
-      
+    
      
       /*
         7. Assurez vous que les booléens de présence des élèves ne sont pas tous les mêmes. Réalisez l'algorithme suivant : 
         POUR CHAQUE élève dans la classe, SI sa propriété présence est vraie, AFFICHEZ dans un boite de dialogue le message (où X et Y sont les prénoms et noms de l'élève considéré): 'Je suis X Y et je suis présent'. 
       */ 
+      var checkPresentStudent = function(classe){
+        var i = 0;
+          while(i != classe.eleves.length ){
+            if(classe.eleves[i].present == true){
+            alert(`Je suis ${classe.eleves[i].prenom} ${classe.eleves[i].nom} et je suis présent`);
+            };
+            i++;
+          };
+      }
+
+      checkPresentStudent(classe);
+
     </script>
   </head>
   <body>
