@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>JavaScript & DOM : Les Objets - Exercice 5</title>
     <script>
+      "use strict";
       //Énoncé :
       /*
         1. Créez une fonction constructeur. Cette fonction vous permettra de construire des objets représentant des robots. Les robots ont tous 6 propriétés : un numéro de série, un nom de modèle, un nom d'usage, une couleur, une matière, un durée de garantie.
@@ -14,19 +15,36 @@
         - La matière est une chaîne de caractère. Elle est fixée au départ.
         - La durée de garantie est une chaîne de caractère. Elle est fixée au départ.
       */
-      
+      var UsineDeRobot = function(serialNumber,color){
+        this.serialNumber = serialNumber;
+        this.modelNumber = 1337;
+        this.name = " ";
+        this.color = color;
+        this.material = "metal";
+        this.garantie = "24 mois";
+      };
+
       /*
         2. Créez 12 robots à l'aide de cette fonction constructeur. Chaque robot aura donc un numéro de série et une couleur différente.
-      */
+        */
+     /*
+       3. Créez un tableau qui sera le magasin. Ce tableau devra contenir les 12 références vers les 12 objets représentant chacun des 12 robots.
+     */
+    /*
+      4. Réalisez l'algorithme suivant :
+      POUR CHAQUE robot dans le magasin, AFFECTEZ un nom d'usage qui sera la concaténation du modèle, du numéro de série et de l'index du robot dans le magasin.
+    */
+      var i = 0;
+      let magasin = [];
+      var color = ["rouge", "jaune", "vert", "bleu", "gris", "marron", "bleurouge", "fushia perlé", "jaune canard perlé du sud de l'Italie", "Moche", "Roublue", "Dark White", "White sombre"]
+      while(i != 12){
+        magasin[i] = new UsineDeRobot(i,color[i]);
+        magasin[i].name = magasin[i].modelNumber + "" + magasin[i].serialNumber + "" + i;
+        i++;
+      };
       
-      /*
-        3. Créez un tableau qui sera le magasin. Ce tableau devra contenir les 12 références vers les 12 objets représentant chacun des 12 robots.
-      */
-      
-      /*
-        4. Réalisez l'algorithme suivant :
-        POUR CHAQUE robot dans le magasin, AFFECTEZ un nom d'usage qui sera la concaténation du modèle, du numéro de série et de l'index du robot dans le magasin.
-      */
+
+
     </script>
   </head>
   <body>

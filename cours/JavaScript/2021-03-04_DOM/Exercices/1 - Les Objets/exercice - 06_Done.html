@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>JavaScript & DOM : Les Objets - Exercice 6</title>
     <script>
+      "use strict";
       //Énoncé :
       /*
         1. En JSON, créez un objet qui représente un robot. Ce robot a 6 propriétés : un numéro de série, un nom de modèle, un nom d'usage, une couleur, une matière, un durée de garantie, un nombre de bonjour et une méthode qui lui permet de dire bonjour à l'aide d'une boite de dialogue.
@@ -16,7 +17,19 @@
         - Le nombre de bonjour est un nombre (de base on le fixera à 0)
         - Dire bonjour est une fonction.
       */
-      
+      var robotQuiDitBonjour = {
+        serialNumber: 7,
+        modelNumber: 133,
+        name: "",
+        color: "Rose",
+        material: "metal",
+        garantie: "24 mois",
+        bonjour: 0,
+        direBonjour: function(){
+          alert(`Coucou ! je suis le robot ${this.modelNumber}${this.serialNumber}`);
+          this.bonjour+= 1;
+        },
+      };
       
       /*
         2. Exécutez la méthode qui permet au robot de dire bonjour. Elle doit entraîner l'affichage d'une boite de dialogue avec le texte 'Bonjour humain !' écrit dedans.

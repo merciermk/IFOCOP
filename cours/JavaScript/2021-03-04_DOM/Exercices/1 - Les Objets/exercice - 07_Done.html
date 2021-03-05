@@ -36,27 +36,27 @@
       /*
         1. Affichez dans une boite de dialogue le contenu de la propriété r de l'objet référencé dans la variable monObjet.
       */
-
+      //alert(monObjet.r);
       /*
         2. Affichez dans une boite de dialogue le contenu de la propriété r de l'objet référencé dans la variable monAutreObjet.
       */
-
+      //alert(monAutreObjet.r);
       /*
         3. Déclenchez la méthode située en première position dans le tableau dans la propriété e de l'objet référencé dans la variable monAutreObjet (si vous réussissez le texte 'Vous êtes ici !' devrez s'afficher).
       */
-
+      monAutreObjet.e[0]();
       /*
         4. Mettez l'objet référencé dans la variable monAutreObjet dans une propriété y de l'objet référencé dans la variable monObjet (Vous allez donc mettre un objet dans une - nouvelle - propriété d'un autre objet)
       */
-
+      monObjet.y = monAutreObjet;
       /*
         5. Déclenchez la méthode situé dans la propriété t dans l'objet référencé dans la propriété y contenue dans l'objet référencé dans la variable monObjet. Si vous réussissez, le message 'Désormais ma propriété y contient un objet' devrait s'afficher.
       */
-
+      monObjet.y.t();
       /*
         6. Déclenchez la méthode situé dans la propriété e de l'objet nouvellement référencé dans la propriété y lors de l'exécution de la précédente méthode. Si vous réussissez, vous devriez voir s'afficher successivement les textes  : 'Ou suis je ? Qui suis je ?'.
       */
-      
+     
     </script>
   </head>
   <body>
