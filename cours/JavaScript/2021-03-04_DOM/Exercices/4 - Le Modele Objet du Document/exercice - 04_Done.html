@@ -28,9 +28,15 @@
       /*
       4. La propriété body contient donc un objet de type HTMLBodyElement. Affectez la chaîne de caractère 'lime' à la propriété bgColor de l'objet référencé dans la propriété body.
       */
+
+      let onLoadFunction = function(){
+        document.body.bgColor = "lime";
+        console.log(document.body)
+      }
+     
     </script>
   </head>
-  <body>
+  <body onload="onLoadFunction()">
     <h1>Titre principal</h1>
     <ul>
       <li>Premier point</li>

@@ -2,25 +2,29 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>JavaScript & DOM : Le Modèle Objet du Document - Exercice 3</title>
+    <title>JavaScript & DOM : Le Modèle Objet du Document - Exercice 1</title>
     <script>
       //Énoncé :
       /*
         En JavaScript, on a accès à des objets qui contiennent les informations relatives au navigateurs Internet : le DOM. L'objet qui permet d'accéder au DOM est l'objet window. Cet objet est l'objet de plus haut niveau en JavaScript. L'objet window contient des sous objets que nous allons exploiter.
-
-        L'objet window contient de propriété qui contiennent des informations relatives au document Web chargé en mémoire. Cet objet est documenté ici dans le MDN : https://developer.mozilla.org/fr/docs/Web/API/Window Si on modifie ces informations en mémoire, l'affichage change en conséquence. Nous allons nous intéresser à la propriété title de du sous objet document de l'objet window.
+        
+        Un des sous objets de l'objet window est l'objet console. On peut donc écrire window.console pour accéder à cet objet. Ce sous objet est documenté ici dans le MDN : https://developer.mozilla.org/en-US/docs/Web/API/Console
+      */
+      
+      /*
+      1. Utilisez la méthode .log() de l'objet console pour afficher un texte dans la console de debug du navigateur Internet.
+      */
+      console.log("Coucou");
+      /*
+      2. Accédez à la page d'accueil des technologies Web sur le MDN (https://developer.mozilla.org/fr/docs/Web/Reference) et regardez le contenu de la console de votre debugger.       
       */
 
       /*
-        1. Affichez dans une boite de dialogue le contenu de la propriété title du sous objet document de l'objet window.
+      3. Accédez à la page d'accueil de facebook et regardez le contenu de la console de votre debugger.       
       */
-
+      
       /*
-        2. Écrivez l'algorithme suivant : AU CLIC sur le titre de la première section, on affecte la valeur 'Ceci est un nouveau titre' à la propriété title du sous objet document de l'objet window.
-      */
-
-      /*
-        3. Écrivez l'algorithme suivant : AU CLIC sur le titre de la deuxième section, SI le titre est 'Ceci est un nouveau titre' ALORS affectez le titre initial à la propriété title du sous objet document de l'objet window SINON affectez la valeur 'Ceci est un nouveau titre'.
+      4. Vous savez maintenant comment sont affichés les messages que vous avez pu voir apparaître dans la console. On utilise la méthode .log() de l'objet console pour debugger un programme de façon non intrusive (sans bloquer le programme comme avec la méthode .alert()). Vous pouvez afficher le contenu de variables par exemple.
       */
     </script>
   </head>
