@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <title>JavaScript & DOM : Les Objets - Exercice 8</title>
     <script>
+      "use strict";
       //Énoncé :
       /*
         1. Créez 1 objet JSON qui représente une maison. Cet objet contient une propriété adresse qui contient l'adresse de la maison et une propriété chambre qui ne contient rien (null)
       */
-      
+      var maison = {
+        adresse: "404 rue undefined",
+        chambre: "",
+      }
       /*
         2. Créez 1 objet JSON qui représente une chambre. Cet objet contient une propriété lit qui contient la chaîne de caractère matelas et une méthode quelEstMonAdresse qui ne contient pas d'instructions pour l'instant.
       */
+
+      var chambre = {
+        adresseMaison: maison,
+        lit: "Matelas",
+        quelEstMonAdresse: function (){
+            alert(this.adresseMaison.adresse);
+        }
+      };
       
       /*
         3. Mettez la référence à l'objet JSON qui représente la chambre dans la propriété chambre de l'objet JSON qui représente la maison.
       */
-      
+      maison.chambre = chambre;
       /*
         4. Affichez dans une boite de dialogue le contenu de la propriété lit de l'objet représentant la chambre en partant de l'objet représentant la maison.
       */
-      
+      //alert(maison.chambre.lit);
+     
       /*
         5. Je souhaite exécuter la méthode quelEstMonAdresse de l'objet représentant la chambre pour afficher l'adresse de la maison contenu dans la propriété adresse de l'objet représentant la maison. En d'autres termes, comment puis-je faire pour accéder à la propriété de la maison (objet parent) à partir d'un méthode de la chambre (objet enfant) ?
         - Vous savez que vos objets sont uniques en mémoire. Vous ne manipulez que des références.
@@ -28,6 +41,9 @@
         - Vous savez que le mot clé this fait référence à l'objet dans lequel le mot clé est employé.
         => Indice : vous devez créer une nouvelle propriété dans l'objet chambre dans laquelle vous mettrez une référence à l'objet maison.
       */
+
+      maison.chambre.quelEstMonAdresse();
+
     </script>
   </head>
   <body>

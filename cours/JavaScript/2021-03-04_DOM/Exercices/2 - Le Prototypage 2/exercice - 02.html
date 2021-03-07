@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>JavaScript & DOM : Le prototypage - Exercice 2</title>
     <script>
+      "use strict";
       //Énoncé :
       /*
         Dans cet exercice, vous ne devez utiliser que des fonctions constructeur. 
@@ -18,7 +19,16 @@
         - Leur genre (mâle ou femelle) qui est une chaîne de caractères;
         - L'action de barrir qui est une méthode.
       */
-
+      var DesMamouths = function(){
+        this.age = 1;
+        this.poids= 12;
+        this.espece = "Mammouth";
+        this.fourrure = true;
+        this.genre = "male";
+        this.barrir = function() {
+          alert('barrir');
+        };
+      };
       /*
         2. Les éléphants contemporains héritent probablement des caractéristiques d'un mammouth qui est leur prototype. Écrivez une fonction constructeur qui permet de construire des objets représentant des éléphants. Les éléphants ont deux caractéristiques qui différent des mammouths :
         - Leur poids qui est un nombre;
@@ -26,6 +36,20 @@
         - Le fait qu'ils n'aient pas de fourrure, qui est un booléen;
         - L'action de manger des cacahuètes qui est une méthode.
       */
+
+      var Elephant = function(){
+        this.poids = 1001;
+        this.espece = "Elephant";
+        this.fourrure = false;
+        this.mangeCacahuetes = function(){
+          alert("Je suis un éléphant et je mange des cacahuetes");
+        }
+        this.prototype = newDesMamouths;
+      }
+
+
+      var elephant1 = new Elephant;
+      var elephant2 = new Elephant;
       
       /*
         3. Créez 2 éléphants. Vous devez pouvoir exécuter la méthode qui leur permet de barrir et qui provient de leur prototype et, exécuter la méthode qui leur permet de manger des cacahuètes et qui leur est propre.
