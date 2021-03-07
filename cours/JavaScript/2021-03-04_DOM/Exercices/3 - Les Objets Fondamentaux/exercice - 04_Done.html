@@ -12,6 +12,18 @@
       /*
         1. Crééz un nouvel objet de type Date dans la mémoire.
       */
+      let date = new Date;
+      let endOfSchool = new Date('2021-03-08 17:00:00')
+
+      let enSecondes = Math.floor((endOfSchool - date) / 1000);
+
+      let heure = Math.floor(enSecondes / 3600);
+      let minutes = Math.floor((enSecondes % 3600) / 60);
+      let secondes = Math.floor((enSecondes % 3600) % 60);
+      
+      
+  
+      console.log('Il reste ' + heure + " heures " + minutes + " minutes " + secondes + " secondes" );
 
       /*
         2. Ci-après consultez la liste des méthodes de l'objet construit avec Date à cette adresse http://www.commentcamarche.net/contents/571-javascript-l-objet-date (en bas de page).

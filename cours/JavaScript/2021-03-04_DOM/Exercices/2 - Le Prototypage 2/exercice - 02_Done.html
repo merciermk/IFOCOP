@@ -44,9 +44,10 @@
         this.mangeCacahuetes = function(){
           alert("Je suis un éléphant et je mange des cacahuetes");
         }
-        this.prototype = newDesMamouths;
-      }
+       
+      };
 
+      Elephant.prototype = new DesMamouths;
 
       var elephant1 = new Elephant;
       var elephant2 = new Elephant;
