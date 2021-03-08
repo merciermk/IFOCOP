@@ -16,16 +16,23 @@
       /*
       2. Écrivez le programme suivant : AU CLIC sur la balise <h1>, la <div> principale doit s'afficher. Si on CLIC à nouveau sur le titre, la <div> principale doit se masquer. L'algorithme est le suivant : SI la <div> est masquée, je l'affiche, SINON je la masque.
       */
+  
     </script>
+    <style>
+      #paragraphes{
+        display: none;
+      }
+    </style>
   </head>
+  
   <body>
-    <h1>Titre principal</h1>
+    <h1 onclick="mrHide()" id="titre">Titre principal</h1>
     <ul>
       <li>Premier point</li>
       <li>Deuxième point</li>
       <li>Troisième point</li>
     </ul>
-    <div>
+    <div  id="paragraphes">
       <div>
         <h2><span>1</span>. Titre de la première section</h2>
         <p><span>1.1</span>. Premier paragraphe de la première section et un <a href="#">lien</a>.</p>
@@ -43,4 +50,16 @@
       </div>
     </div>
   </body>
+  <script>
+        var mrHide = function (){
+        var jekyll = document.getElementById("paragraphes").style.display
+        
+        if(jekyll == "none" || jekyll == ""){
+          document.getElementById("paragraphes").style.display = "inline";
+        }else{
+          document.getElementById("paragraphes").style.display = "none";
+        } 
+      }
+      
+  </script>
 </html>
