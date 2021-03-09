@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>JavaScript & DOM : Le Modèle Objet du Document - Exercice 12</title>
+    <title>JavaScript & DOM : Le Modèle Objet du Document - Exercice 11</title>
     <script>
       //Énoncé :
       /*
@@ -10,12 +10,28 @@
       */
       
       /*
-        1. Écrivez le programme suivant : Au CHARGEMENT du document, toutes les 200ms, ajoutez 2px à la propriété de style de marge à gauche du titre principal. Cela signifie que toutes les 200ms, la marge à gauche du titre principal va augmenter de 2px. Vous utiliserez la méthode .setInterval().
+        1. Écrivez le programme suivant : AU CLIC sur le titre principal, ajoutez 2px à sa propriété de style de marge à gauche. Cela signifie qu'à chaque fois qu'on clique sur le titre principal, sa marge à gauche va augmenter de 2px.
+
+        Note : Pour ajouter 2px à 2px, vous devez d'abord transformer 2px en nombre, additionner le nombre obtenu et re-concaténer ce nombre avec le texte 'px'.
       */
+
+      function moreMarginLeftPlease(){
+        var addTwoPixels = document.getElementById("myH1").style.marginLeft;
+        addTwoPixels = parseInt(addTwoPixels);
+        if (isNaN(addTwoPixels)){
+          addTwoPixels = 0;
+        }
+        
+        addTwoPixels += 2;
+        document.getElementById("myH1").style.marginLeft = addTwoPixels + "px";
+      }
+      function clickMyH1() {
+      document.getElementById("myH1").addEventListener('click', moreMarginLeftPlease);
+      }
     </script>
   </head>
-  <body>
-    <h1>Titre principal</h1>
+  <body onload="clickMyH1()">
+    <h1 id="myH1">Titre principal</h1>
     <ul>
       <li>Premier point</li>
       <li>Deuxième point</li>

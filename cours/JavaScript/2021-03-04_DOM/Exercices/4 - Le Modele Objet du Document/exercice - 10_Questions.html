@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>JavaScript & DOM : Le Modèle Objet du Document - Exercice 10</title>
     <script>
+      "use strict"
       //Énoncé :
       /*
         En JavaScript, on a accès à des objets qui contiennent les informations relatives au navigateurs Internet : le DOM. L'objet qui permet d'accéder au DOM est l'objet window. Cet objet est l'objet de plus haut niveau en JavaScript. L'objet window contient des sous objets que nous allons exploiter.
@@ -16,28 +17,21 @@
       /*
       2. Écrivez le programme suivant : AU CLIC sur la balise <h1>, la <div> principale doit s'afficher. Si on CLIC à nouveau sur le titre, la <div> principale doit se masquer. L'algorithme est le suivant : SI la <div> est masquée, je l'affiche, SINON je la masque.
       */
-      // var mrHide = function (){
-      //   var jekyll = document.getElementById("paragraphes").style.display
-      //   console.log("coucou")
-      //   if(jekyll == "none"){
-      //     document.getElementById("paragraphes").style.display = "inline";
-      //   }else{
-      //     document.getElementById("paragraphes").style.display = "none";
-      //   } 
-      // }
-
-      var hideOnClick = function(){
-        document.getElementById("titre").addEventListener('click', () => {var jekyll = document.getElementById("paragraphes").style.display
-        console.log("coucou")
-        if(jekyll == "none"){
+      function mrHide (){
+        var jekyll = document.getElementById("paragraphes").style.display
+        if(jekyll == "none" || jekyll == ""){
           document.getElementById("paragraphes").style.display = "inline";
         }else{
           document.getElementById("paragraphes").style.display = "none";
-        } });
-      };
+        } 
+      }
+
+      var hideOnClick = function(){
+        document.getElementById("titre").addEventListener('click', mrHide);
+      }
 
 
-      //Pourquoi la fonction ne fonctionne pas quand je fait un appel dans addEventListener
+      //Pourquoi pas de () dans la fonction?
 
 
     </script>
