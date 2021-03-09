@@ -23,8 +23,8 @@
         // document.getElementById('div3').addEventListener('mouseover', () => {document.getElementById("div3").style.color = "red";});
         // document.getElementById('div3').addEventListener('mouseleave', () => {document.getElementById("div3").style.color = "black";})
 
-        document.getElementById('div1').addEventListener('mouseover', () => {document.styleSheets[0].cssRules[0].selectorText = ".test"});
-        document.getElementById('div1').addEventListener('mouseleave', () => {document.styleSheets[0].cssRules[0].selectorText = "#div1"});
+        document.getElementById('div1').addEventListener('mouseover', () => {document.getElementById('div1').className = "test"});
+        document.getElementById('div1').addEventListener('mouseleave', () => {document.getElementById('div1').className = "test2"});
       
       };
 
@@ -32,7 +32,7 @@
          
     </script>
     <style>
-      #div1{
+      .test2{
         color : blue;
       }
 
