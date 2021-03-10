@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript & DOM : Le Modèle Objet du Document - Exercice 8</title>
+    <style>
+      .test{
+        color: red;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <h1>Titre principal</h1>
+    <ul>
+      <li id="li1">Premier point</li>
+      <li id="li2">Deuxième point</li>
+      <li id="li3">Troisième point</li>
+    </ul>
+    <div>
+      <div>
+        <h2><span id = "span1" class="">1</span>. Titre de la première section</h2>
+        <p><span>1.1</span>. Premier paragraphe de la première section et un <a href="#">lien</a>.</p>
+        <p><span>1.2</span>. Deuxième paragraphe de la deuxième section et un <a href="#">lien</a>.</p>
+      </div>
+      <div>
+        <h2><span id ="span2">2</span>. Titre de la deuxième section</h2>
+        <p><span>2.1</span>. Premier paragraphe de la deuxième section.</p>
+        <p><span>2.2</span>. Deuxième paragraphe de la deuxième section.</p>
+      </div>
+      <div>
+        <h2><span id ="span3">3</span>. Titre de la troisième section</h2>
+        <p><span>3.1</span>. Premier paragraphe de la troisième section.</p>
+        <p><span>3.2</span>. Deuxième paragraphe de la troisième section.</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    "use strict"
+    //Énoncé :
+    /*
+      En JavaScript, on a accès à des objets qui contiennent les informations relatives au navigateurs Internet : le DOM. L'objet qui permet d'accéder au DOM est l'objet window. Cet objet est l'objet de plus haut niveau en JavaScript. L'objet window contient des sous objets que nous allons exploiter.
+      
+      Les objets correspondants aux éléments HTML ont tous une propriété style qui contient un sous objet. Ce sous objet est de type objectCSS2Properties. Il contient des propriétés qui correspondent aux propriétés de style de la balise. Ce sous objet est documenté dans le MDN ici : https://developer.mozilla.org/fr/docs/Web/API/HTMLElement/style
+    */
+    
+    /*
+      1. Écrivez le programme suivant : AU CLIC sur le premier <li> changez la couleur, le poids et la taille de la police du premier <span> du titre de la première section. AU CLIC sur le deuxième <li> changez la couleur, le poids et la taille de la police du premier <span> du titre de la deuxième section. AU CLIC sur le troisième <li> changez la couleur, le poids et la taille de la police du premier <span> du titre de la troisième section.
+    */
+    
+    /*
+      2. Écrivez le programme suivant : AU SURVOL du titre principal, effacez le propriétés de style des 3 <span> des 3 titres de section.
+    */
+        // li > clic = change span titre fontstyle fontsize color > ;
+
+        var changeStyle = function(span){
+          console.log(span)
+          var x = document.getElementById(span).className;
+          if(x == ""){
+            document.getElementById(span).className = "test"
+          }else{
+            document.getElementById(span).className = ""
+          }
+        }
+        
+
+        document.getElementById("li1").onclick = () => {changeStyle("span1")};
+        document.getElementById("li2").onclick = () => {changeStyle("span2")};
+        document.getElementById("li3").onclick = () => {changeStyle("span3")};
+      
+
+        // pourquoi je dois mettre une fonction dans une fonction pour onclick?
+  </script>
+</html>
