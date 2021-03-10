@@ -19,9 +19,9 @@
         if (isNaN(addTwoPixels)){
           addTwoPixels = 0;
         }
+        setInterval(function(){addTwoPixels += 2;
+        document.getElementById("myH1").style.marginLeft = addTwoPixels + "px"}, 200);
         
-        addTwoPixels += 2;
-        document.getElementById("myH1").style.marginLeft = addTwoPixels + "px";
       }
 
       
@@ -31,7 +31,7 @@
 
     </script>
   </head>
-  <body onload="setInterval(moreMarginLeftPlease, 200)">
+  <body onload="moreMarginLeftPlease()">
     <h1 id="myH1">Titre principal</h1>
     <ul>
       <li>Premier point</li>
