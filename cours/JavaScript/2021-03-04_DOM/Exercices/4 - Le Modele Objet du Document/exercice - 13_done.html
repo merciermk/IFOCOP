@@ -13,39 +13,12 @@
         1. Faîtes la même chose que pour l'exercice précédent mais en faisant varier l'opacité du titre.
         changer l'opacité toutes les 200ms;
       */
-
-      var hollowMan = function(y){
-        var invisibleMan = document.getElementById("myH1").style
-        var i = 0 ;
-        if(invisibleMan.opacity == ""){
-          invisibleMan.opacity = 1;
-        }
-
-        if(y == 1){
-         var down =  setInterval(() => {
-           if (y == 0) {
-             clearInterval(down);
-              
-            }
-            invisibleMan.opacity -= 0.1
-          }, 200);
-        }
-        if(y == 0 ){
-          var up = setInterval(() => {
-            if (invisibleMan.opacity == 1) {
-             clearInterval(up);
-             return hollowMan(1)
-            }
-            invisibleMan.opacity += 0.1;
-          }, 300);
-        }
-        
-      }
+  
        
     </script>
   </head>
-  <body onload="hollowMan(1)">
-    <h1 id="myH1">Titre principal</h1>
+  <body>
+    <h1>Titre principal</h1>
     <ul>
       <li>Premier point</li>
       <li>Deuxième point</li>
@@ -69,4 +42,36 @@
       </div>
     </div>
   </body>
+  <script>
+     let myH1 = document.querySelector('h1');
+     var incrementation = false;
+    setInterval(() =>{ 
+
+      if(myH1.style.opacity == ""){
+        myH1.style.opacity = 1;
+      }
+  
+    
+      if(incrementation){
+        console.log(incrementation)
+     
+      myH1.style.opacity = parseFloat(myH1.style.opacity) + 0.01 ;
+      console.log(myH1.style.opacity)
+      if (myH1.style.opacity == 1) {
+        incrementation = false;
+      }
+      
+      }
+      if(!incrementation){
+      
+      myH1.style.opacity -= 0.01;
+      if(myH1.style.opacity == 0){
+        incrementation = true
+      }
+      console.log(incrementation)
+    }
+  
+    },50)
+
+  </script>
 </html>
